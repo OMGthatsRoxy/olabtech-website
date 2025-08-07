@@ -225,25 +225,105 @@ export default function TrainerLogbookPage() {
 
           <div className="bg-gray-800 rounded-2xl p-8 border border-gray-700">
             <h3 className="text-2xl font-bold mb-8 text-center">📱 {currentLanguage === 'zh' ? '应用界面展示' : currentLanguage === 'en' ? 'Application Interface Display' : 'Paparan Antara Muka Aplikasi'}</h3>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-              {[
-                { title: currentLanguage === 'zh' ? '首页仪表板' : currentLanguage === 'en' ? 'Homepage Dashboard' : 'Papan Pemuka Utama', 
-                  desc: currentLanguage === 'zh' ? '数据概览与快速操作' : currentLanguage === 'en' ? 'Data overview & quick operations' : 'Gambaran data & operasi pantas' },
-                { title: currentLanguage === 'zh' ? '客户管理' : currentLanguage === 'en' ? 'Client Management' : 'Pengurusan Pelanggan', 
-                  desc: currentLanguage === 'zh' ? '客户列表与详细信息' : currentLanguage === 'en' ? 'Client list & detailed information' : 'Senarai pelanggan & maklumat terperinci' },
-                { title: currentLanguage === 'zh' ? '课程排期' : currentLanguage === 'en' ? 'Course Schedule' : 'Jadual Kursus', 
-                  desc: currentLanguage === 'zh' ? '可视化课程日历' : currentLanguage === 'en' ? 'Visualized course calendar' : 'Kalendar kursus yang divisualkan' },
-                { title: currentLanguage === 'zh' ? '潜在客户' : currentLanguage === 'en' ? 'Potential Clients' : 'Pelanggan Berpotensi', 
-                  desc: currentLanguage === 'zh' ? '潜在客户管理' : currentLanguage === 'en' ? 'Prospect management' : 'Pengurusan prospek' }
-              ].map((item, index) => (
-                <div key={index} className="text-center p-6 bg-gray-900 rounded-xl border border-gray-700 hover:transform hover:scale-105 transition-all duration-300">
-                  <div className="w-full h-32 bg-gray-800 rounded-lg mb-4 border border-gray-600 flex items-center justify-center">
-                    <div className="text-3xl text-blue-400">📱</div>
-                  </div>
-                  <h4 className="text-lg font-semibold mb-2">{item.title}</h4>
-                  <p className="text-gray-400 text-sm">{item.desc}</p>
+            
+            {/* Top Bar */}
+            <div className="bg-gray-900 rounded-lg p-4 mb-6 border border-gray-700">
+              <div className="flex justify-between items-center">
+                <div className="text-blue-400 text-xl">📱</div>
+                <div className="flex space-x-2">
+                  <button className="px-3 py-1 bg-blue-600 text-white rounded text-sm">中文</button>
+                  <button className="px-3 py-1 bg-gray-700 text-gray-300 rounded text-sm">English</button>
                 </div>
-              ))}
+              </div>
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+              {/* Homepage Dashboard */}
+              <div className="bg-gray-900 rounded-xl border border-gray-700 p-4">
+                <h4 className="text-lg font-semibold mb-3 text-center">{currentLanguage === 'zh' ? '首页仪表板' : currentLanguage === 'en' ? 'Homepage Dashboard' : 'Papan Pemuka Utama'}</h4>
+                <p className="text-gray-400 text-sm mb-4 text-center">{currentLanguage === 'zh' ? '数据概览与快速操作' : currentLanguage === 'en' ? 'Data overview & quick operations' : 'Gambaran data & operasi pantas'}</p>
+                <div className="bg-gray-800 rounded-lg p-3 border border-gray-600">
+                  <div className="flex space-x-1 mb-2">
+                    <div className="h-2 bg-red-500 rounded flex-1"></div>
+                    <div className="h-2 bg-purple-500 rounded flex-1"></div>
+                    <div className="h-2 bg-teal-500 rounded flex-1 relative">
+                      <div className="absolute right-0 top-0 w-3 h-3 bg-blue-500 rounded-full flex items-center justify-center">
+                        <span className="text-white text-xs">O</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="text-white text-sm">Welcome, Oscar</div>
+                </div>
+              </div>
+
+              {/* Client Management */}
+              <div className="bg-gray-900 rounded-xl border border-gray-700 p-4">
+                <h4 className="text-lg font-semibold mb-3 text-center">{currentLanguage === 'zh' ? '客户管理' : currentLanguage === 'en' ? 'Client Management' : 'Pengurusan Pelanggan'}</h4>
+                <p className="text-gray-400 text-sm mb-4 text-center">{currentLanguage === 'zh' ? '客户列表与详细信息' : currentLanguage === 'en' ? 'Client list & detailed information' : 'Senarai pelanggan & maklumat terperinci'}</p>
+                <div className="bg-gray-800 rounded-lg p-3 border border-gray-600">
+                  <div className="flex justify-between items-center mb-3">
+                    <div className="text-white font-medium">Clients</div>
+                    <button className="bg-blue-600 text-white px-2 py-1 rounded text-xs">+ Client</button>
+                  </div>
+                  <div className="space-y-2">
+                    <div className="bg-gray-700 rounded p-2">
+                      <div className="text-white text-sm">Coach</div>
+                      <div className="text-gray-400 text-xs">3464564564</div>
+                    </div>
+                    <div className="bg-gray-700 rounded p-2">
+                      <div className="text-white text-sm">Ivy Wong</div>
+                      <div className="text-gray-400 text-xs">0112847263</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              {/* Session Schedule */}
+              <div className="bg-gray-900 rounded-xl border border-gray-700 p-4">
+                <h4 className="text-lg font-semibold mb-3 text-center">{currentLanguage === 'zh' ? '课程排期' : currentLanguage === 'en' ? 'Course Schedule' : 'Jadual Kursus'}</h4>
+                <p className="text-gray-400 text-sm mb-4 text-center">{currentLanguage === 'zh' ? '可视化课程日历' : currentLanguage === 'en' ? 'Visualized course calendar' : 'Kalendar kursus yang divisualkan'}</p>
+                <div className="bg-gray-800 rounded-lg p-3 border border-gray-600">
+                  <div className="flex justify-between items-center mb-3">
+                    <div className="text-white font-medium">Session Schedule</div>
+                    <button className="bg-blue-600 text-white px-2 py-1 rounded text-xs">Week</button>
+                  </div>
+                  <div className="flex justify-between text-xs text-gray-300 mb-2">
+                    <span>Mon</span>
+                    <span>Tue</span>
+                    <span>Wed</span>
+                    <span className="bg-blue-600 text-white px-1 rounded">Thu</span>
+                    <span>Fri</span>
+                    <span>Sat</span>
+                    <span>Sun</span>
+                  </div>
+                  <div className="border-t border-gray-600 pt-2">
+                    <div className="h-16 bg-gray-700 rounded opacity-50"></div>
+                  </div>
+                </div>
+              </div>
+
+              {/* Prospects */}
+              <div className="bg-gray-900 rounded-xl border border-gray-700 p-4">
+                <h4 className="text-lg font-semibold mb-3 text-center">{currentLanguage === 'zh' ? '潜在客户' : currentLanguage === 'en' ? 'Potential Clients' : 'Pelanggan Berpotensi'}</h4>
+                <p className="text-gray-400 text-sm mb-4 text-center">{currentLanguage === 'zh' ? '潜在客户管理' : currentLanguage === 'en' ? 'Prospect management' : 'Pengurusan prospek'}</p>
+                <div className="bg-gray-800 rounded-lg p-3 border border-gray-600">
+                  <div className="flex justify-between items-center mb-3">
+                    <div className="text-white font-medium">Prospects</div>
+                    <button className="bg-blue-600 text-white px-2 py-1 rounded text-xs">+ Prospect</button>
+                  </div>
+                  <div className="text-gray-400 text-xs mb-2">Total Prospects: 2</div>
+                  <div className="space-y-2">
+                    <div className="bg-gray-700 rounded p-2">
+                      <div className="text-white text-sm">coach</div>
+                      <div className="text-gray-400 text-xs">34645645645</div>
+                    </div>
+                    <div className="bg-gray-700 rounded p-2">
+                      <div className="text-white text-sm">KF Wong</div>
+                      <div className="text-gray-400 text-xs">0187464638</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -302,7 +382,9 @@ export default function TrainerLogbookPage() {
             <h2 className="text-4xl font-bold mb-4">{currentContent.cta.title}</h2>
             <p className="text-xl mb-8 opacity-90">{currentContent.cta.description}</p>
             <a
-              href="http://localhost:3001"
+              href="https://clienttrackingapp.vercel.app"
+              target="_blank"
+              rel="noopener noreferrer"
               className="inline-block bg-white text-blue-600 px-8 py-4 rounded-full font-semibold text-lg hover:transform hover:-translate-y-1 transition-all duration-300 shadow-lg hover:shadow-xl"
             >
               {currentContent.cta.button}
@@ -313,7 +395,7 @@ export default function TrainerLogbookPage() {
         {/* Footer */}
         <div className="py-12 text-center border-t border-gray-700">
           <p className="text-gray-400">
-            &copy; 2024 {currentLanguage === 'zh' ? 'Trainer Logbook' : 
+            &copy; 2025 {currentLanguage === 'zh' ? 'Trainer Logbook' : 
                         currentLanguage === 'en' ? 'Trainer Logbook' : 
                         'Trainer Logbook'}. 
             {currentLanguage === 'zh' ? '专为教练打造的专业管理平台' :

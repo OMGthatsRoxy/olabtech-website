@@ -305,7 +305,7 @@ export default function OLABAppHomePage() {
         {/* Footer */}
         <div className="py-12 text-center border-t border-gray-700">
           <p className="text-gray-400">
-            &copy; 2024 OLAB Tech. 
+            &copy; 2025 OLAB Tech. 
             {currentLanguage === 'zh' ? ' 专为效率而生的技术平台' :
              currentLanguage === 'en' ? ' Technology platform born for efficiency' :
              'Platform teknologi yang dilahirkan untuk kecekapan'}

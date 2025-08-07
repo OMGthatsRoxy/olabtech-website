@@ -55,17 +55,13 @@ export default function ContactPage() {
       info: {
         title: '联系信息',
         email: {
-          title: '邮箱',
-          addresses: ['contact@olabtech.com', 'support@olabtech.com']
+          title: '邮箱'
         },
         phone: {
-          title: '电话',
-          number: '+86 400-123-4567',
-          hours: '工作日 9:00-18:00'
+          title: '电话'
         },
         address: {
-          title: '地址',
-          content: '北京市朝阳区<br />科技园区创新大厦<br />100000'
+          title: '地址'
         }
       },
       faq: {
@@ -105,17 +101,13 @@ export default function ContactPage() {
       info: {
         title: 'Contact Information',
         email: {
-          title: 'Email',
-          addresses: ['contact@olabtech.com', 'support@olabtech.com']
+          title: 'Email'
         },
         phone: {
-          title: 'Phone',
-          number: '+86 400-123-4567',
-          hours: 'Weekdays 9:00-18:00'
+          title: 'Phone'
         },
         address: {
-          title: 'Address',
-          content: 'Chaoyang District, Beijing<br />Innovation Building, Tech Park<br />100000'
+          title: 'Address'
         }
       },
       faq: {
@@ -155,17 +147,13 @@ export default function ContactPage() {
       info: {
         title: 'Maklumat Hubungan',
         email: {
-          title: 'E-mel',
-          addresses: ['contact@olabtech.com', 'support@olabtech.com']
+          title: 'E-mel'
         },
         phone: {
-          title: 'Telefon',
-          number: '+86 400-123-4567',
-          hours: 'Hari bekerja 9:00-18:00'
+          title: 'Telefon'
         },
         address: {
-          title: 'Alamat',
-          content: 'Daerah Chaoyang, Beijing<br />Bangunan Inovasi, Taman Teknologi<br />100000'
+          title: 'Alamat'
         }
       },
       faq: {
@@ -301,11 +289,6 @@ export default function ContactPage() {
                       <h3 className="text-lg font-semibold text-white mb-1">
                         {currentContent.info.email.title}
                       </h3>
-                      {currentContent.info.email.addresses.map((address, index) => (
-                        <p key={index} className="text-gray-300">
-                          {address}
-                        </p>
-                      ))}
                     </div>
                   </div>
 
@@ -317,12 +300,6 @@ export default function ContactPage() {
                       <h3 className="text-lg font-semibold text-white mb-1">
                         {currentContent.info.phone.title}
                       </h3>
-                      <p className="text-gray-300">
-                        {currentContent.info.phone.number}
-                      </p>
-                      <p className="text-sm text-gray-500">
-                        {currentContent.info.phone.hours}
-                      </p>
                     </div>
                   </div>
 
@@ -334,7 +311,6 @@ export default function ContactPage() {
                       <h3 className="text-lg font-semibold text-white mb-1">
                         {currentContent.info.address.title}
                       </h3>
-                      <p className="text-gray-300" dangerouslySetInnerHTML={{ __html: currentContent.info.address.content }} />
                     </div>
                   </div>
                 </div>
@@ -365,7 +341,7 @@ export default function ContactPage() {
         {/* Footer */}
         <div className="py-12 text-center border-t border-gray-700">
           <p className="text-gray-400">
-            &copy; 2024 OLAB Tech. 
+            &copy; 2025 OLAB Tech. 
             {currentLanguage === 'zh' ? ' 专为效率而生的技术平台' :
              currentLanguage === 'en' ? ' Technology platform born for efficiency' :
              'Platform teknologi yang dilahirkan untuk kecekapan'}

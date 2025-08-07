@@ -20,38 +20,6 @@ export default function ProductsPage() {
           category: '客户管理系统',
           link: '/products/trainer-logbook',
           features: ['客户信息管理', '课程排期', '配套管理', '数据统计']
-        },
-        {
-          name: 'OLAB Coach',
-          description: '智能学习助手，整合AI技术，帮助您制定个性化学习计划，提升学习效率。',
-          icon: Brain,
-          category: 'AI工具',
-          link: 'https://olabapp.com/coach',
-          features: ['个性化学习', 'AI驱动', '智能推荐', '进度跟踪']
-        },
-        {
-          name: 'PDF转Word工具',
-          description: '快速将PDF文档转换为可编辑的Word格式，保持原有格式，简单易用。',
-          icon: FileText,
-          category: '文档工具',
-          link: 'https://olabapp.com/pdf2word',
-          features: ['格式保持', '快速转换', '批量处理', '在线使用']
-        },
-        {
-          name: '视频文字提取',
-          description: '从视频中自动提取文字内容，支持多种语言识别，AI驱动的高精度转换。',
-          icon: Video,
-          category: '视频工具',
-          link: 'https://olabapp.com/extract-video-text',
-          features: ['多语言支持', 'AI识别', '高精度', '批量处理']
-        },
-        {
-          name: '图像处理工具',
-          description: '智能图像编辑和处理，包括压缩、格式转换等功能，轻量高效。',
-          icon: Image,
-          category: '图像工具',
-          link: 'https://olabapp.com/image-tools',
-          features: ['智能压缩', '格式转换', '批量处理', '在线编辑']
         }
       ],
       cta: {
@@ -71,38 +39,6 @@ export default function ProductsPage() {
           category: 'Client Management',
           link: '/products/trainer-logbook',
           features: ['Client Management', 'Course Scheduling', 'Package Management', 'Data Analytics']
-        },
-        {
-          name: 'OLAB Coach',
-          description: 'Intelligent learning assistant, integrating AI technology to help you create personalized learning plans and improve learning efficiency.',
-          icon: Brain,
-          category: 'AI Tools',
-          link: 'https://olabapp.com/coach',
-          features: ['Personalized Learning', 'AI-Powered', 'Smart Recommendations', 'Progress Tracking']
-        },
-        {
-          name: 'PDF to Word Tool',
-          description: 'Quickly convert PDF documents to editable Word format while maintaining the original format, simple and easy to use.',
-          icon: FileText,
-          category: 'Document Tools',
-          link: 'https://olabapp.com/pdf2word',
-          features: ['Format Preservation', 'Fast Conversion', 'Batch Processing', 'Online Use']
-        },
-        {
-          name: 'Video Text Extraction',
-          description: 'Automatically extract text content from videos with support for multiple language recognition, AI-driven high-precision conversion.',
-          icon: Video,
-          category: 'Video Tools',
-          link: 'https://olabapp.com/extract-video-text',
-          features: ['Multi-language Support', 'AI Recognition', 'High Precision', 'Batch Processing']
-        },
-        {
-          name: 'Image Processing Tools',
-          description: 'Intelligent image editing and processing, including compression, format conversion, and more, lightweight and efficient.',
-          icon: Image,
-          category: 'Image Tools',
-          link: 'https://olabapp.com/image-tools',
-          features: ['Smart Compression', 'Format Conversion', 'Batch Processing', 'Online Editing']
         }
       ],
       cta: {
@@ -122,38 +58,6 @@ export default function ProductsPage() {
           category: 'Pengurusan Pelanggan',
           link: '/products/trainer-logbook',
           features: ['Pengurusan Pelanggan', 'Penjadualan Kursus', 'Pengurusan Pakej', 'Analisis Data']
-        },
-        {
-          name: 'OLAB Coach',
-          description: 'Pembantu pembelajaran pintar, mengintegrasikan teknologi AI untuk membantu anda membuat pelan pembelajaran peribadi dan meningkatkan kecekapan pembelajaran.',
-          icon: Brain,
-          category: 'Alat AI',
-          link: 'https://olabapp.com/coach',
-          features: ['Pembelajaran Peribadi', 'Berkuasa AI', 'Cadangan Pintar', 'Penjejakan Kemajuan']
-        },
-        {
-          name: 'Alat PDF ke Word',
-          description: 'Tukar dokumen PDF kepada format Word yang boleh diedit dengan cepat sambil mengekalkan format asal, mudah dan senang digunakan.',
-          icon: FileText,
-          category: 'Alat Dokumen',
-          link: 'https://olabapp.com/pdf2word',
-          features: ['Pemeliharaan Format', 'Penukaran Pantas', 'Pemprosesan Batch', 'Penggunaan Dalam Talian']
-        },
-        {
-          name: 'Pengekstrakan Teks Video',
-          description: 'Ekstrak kandungan teks dari video secara automatik dengan sokongan untuk pengiktirafan pelbagai bahasa, penukaran berketepatan tinggi berkuasa AI.',
-          icon: Video,
-          category: 'Alat Video',
-          link: 'https://olabapp.com/extract-video-text',
-          features: ['Sokongan Pelbagai Bahasa', 'Pengiktirafan AI', 'Ketepatan Tinggi', 'Pemprosesan Batch']
-        },
-        {
-          name: 'Alat Pemprosesan Imej',
-          description: 'Penyuntingan dan pemprosesan imej pintar, termasuk mampatan, penukaran format, dan banyak lagi, ringan dan cekap.',
-          icon: Image,
-          category: 'Alat Imej',
-          link: 'https://olabapp.com/image-tools',
-          features: ['Mampatan Pintar', 'Penukaran Format', 'Pemprosesan Batch', 'Penyuntingan Dalam Talian']
         }
       ],
       cta: {
@@ -229,22 +133,12 @@ export default function ProductsPage() {
           </div>
         </div>
 
-        {/* CTA Section */}
-        <div className="py-20">
-          <div className="bg-gradient-to-r from-blue-600 to-purple-600 rounded-2xl p-12 text-center">
-            <h2 className="text-4xl font-bold mb-4">{currentContent.cta.title}</h2>
-            <p className="text-xl mb-8 opacity-90">{currentContent.cta.subtitle}</p>
-            <Link href="https://olabapp.com" className="bg-white text-blue-600 hover:bg-gray-100 font-medium py-3 px-8 rounded-lg text-lg transition-all duration-200 inline-flex items-center hover:transform hover:-translate-y-1 shadow-lg hover:shadow-xl">
-              {currentContent.cta.button}
-              <ExternalLink className="ml-2" size={20} />
-            </Link>
-          </div>
-        </div>
+
 
         {/* Footer */}
         <div className="py-12 text-center border-t border-gray-700">
           <p className="text-gray-400">
-            &copy; 2024 OLAB Tech. 
+            &copy; 2025 OLAB Tech. 
             {currentLanguage === 'zh' ? ' 为个人打造的科技工具箱' :
              currentLanguage === 'en' ? ' The Tech Toolbox for Individuals' :
              'Kotak Alat Teknologi untuk Individu'}

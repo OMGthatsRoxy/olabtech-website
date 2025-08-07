@@ -269,7 +269,7 @@ export default function AboutPage() {
         {/* Footer */}
         <div className="py-12 text-center border-t border-gray-700">
           <p className="text-gray-400">
-            &copy; 2024 OLAB Tech. 
+            &copy; 2025 OLAB Tech. 
             {currentLanguage === 'zh' ? ' 为个人打造的科技工具箱' :
              currentLanguage === 'en' ? ' The Tech Toolbox for Individuals' :
              'Kotak Alat Teknologi untuk Individu'}

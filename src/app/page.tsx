@@ -138,15 +138,7 @@ export default function HomePage() {
           <p className="text-lg text-blue-400 font-medium mb-8">
             {currentContent.tagline}
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link href="/products/trainer-logbook" className="bg-blue-600 hover:bg-blue-700 text-white font-medium py-3 px-8 rounded-lg text-lg transition-all duration-200 inline-flex items-center hover:transform hover:-translate-y-1">
-              {currentContent.cta1}
-              <ArrowRight className="ml-2" size={20} />
-            </Link>
-            <Link href="https://olabapp.com" className="bg-gray-700 hover:bg-gray-600 text-white font-medium py-3 px-8 rounded-lg text-lg transition-all duration-200 inline-flex items-center hover:transform hover:-translate-y-1">
-              {currentContent.cta2}
-              <ArrowRight className="ml-2" size={20} />
-            </Link>
+          <div className="flex justify-center">
             <Link href="/products" className="bg-gray-700 hover:bg-gray-600 text-white font-medium py-3 px-8 rounded-lg text-lg transition-all duration-200 hover:transform hover:-translate-y-1">
               {currentContent.cta3}
             </Link>
@@ -187,13 +179,9 @@ export default function HomePage() {
           <div className="bg-gradient-to-r from-blue-600 to-purple-600 rounded-2xl p-12 text-center">
             <h2 className="text-4xl font-bold mb-4">{currentContent.ctaSection.title}</h2>
             <p className="text-xl mb-8 opacity-90">{currentContent.ctaSection.description}</p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <div className="flex justify-center">
               <Link href="/products/trainer-logbook" className="bg-white text-blue-600 hover:bg-gray-100 font-medium py-3 px-8 rounded-lg text-lg transition-all duration-200 inline-flex items-center hover:transform hover:-translate-y-1 shadow-lg hover:shadow-xl">
                 {currentContent.ctaSection.button1}
-                <ArrowRight className="ml-2" size={20} />
-              </Link>
-              <Link href="https://olabapp.com" className="bg-white text-blue-600 hover:bg-gray-100 font-medium py-3 px-8 rounded-lg text-lg transition-all duration-200 inline-flex items-center hover:transform hover:-translate-y-1 shadow-lg hover:shadow-xl">
-                {currentContent.ctaSection.button2}
                 <ArrowRight className="ml-2" size={20} />
               </Link>
             </div>
@@ -203,7 +191,7 @@ export default function HomePage() {
         {/* Footer */}
         <div className="py-12 text-center border-t border-gray-700">
           <p className="text-gray-400">
-            &copy; 2024 OLAB Tech. 
+            &copy; 2025 OLAB Tech. 
             {currentLanguage === 'zh' ? ' 为个人打造的科技工具箱' :
              currentLanguage === 'en' ? ' The Tech Toolbox for Individuals' :
              'Kotak Alat Teknologi untuk Individu'}
