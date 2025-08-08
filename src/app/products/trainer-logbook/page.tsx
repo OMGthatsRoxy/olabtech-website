@@ -382,7 +382,7 @@ export default function TrainerLogbookPage() {
             <h2 className="text-4xl font-bold mb-4">{currentContent.cta.title}</h2>
             <p className="text-xl mb-8 opacity-90">{currentContent.cta.description}</p>
             <a
-              href="https://clienttrackingapp.vercel.app"
+              href="https://trainerlogbook.olabtech.com"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-block bg-white text-blue-600 px-8 py-4 rounded-full font-semibold text-lg hover:transform hover:-translate-y-1 transition-all duration-300 shadow-lg hover:shadow-xl"
